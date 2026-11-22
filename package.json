@@ -1,0 +1,35 @@
+{
+  "name": "nexora",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NEXORA - ERP & Gestion Commerciale Fullstack Next.js 14 App Router + PostgreSQL 18",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspace=@nexora/web run dev",
+    "build": "npm --workspace=@nexora/web run build",
+    "start": "npm --workspace=@nexora/web run start",
+    "lint": "npm --workspace=@nexora/web run lint",
+    "test": "node scripts/test-all-features.mjs",
+    "test:all": "node scripts/test-all-features.mjs",
+    "prisma:generate": "npx prisma generate --schema=apps/web/prisma/schema.prisma",
+    "prisma:migrate": "npx prisma migrate dev --schema=apps/web/prisma/schema.prisma",
+    "prisma:studio": "npx prisma studio --schema=apps/web/prisma/schema.prisma"
+  },
+  "keywords": [
+    "erp",
+    "gestion-commerciale",
+    "finance",
+    "afrique",
+    "fcfa",
+    "nextjs",
+    "react",
+    "postgresql",
+    "prisma",
+    "shadcn"
+  ],
+  "author": "NEXORA Team",
+  "license": "UNLICENSED"
+}
